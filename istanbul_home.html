@@ -4,10 +4,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800,700,500' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <link rel="stylesheet" href="istanbul.css">
+    <script src="Top_Cities_Istanbul.js"></script>
   </head>
+
   <body>
-    <div class="container-fluid" id="white">
+  <!--navbar-->
+  <div class="navbar">
+      <div class="hamburgermenu_li">
+        <img id="hamburgermenu" src="hamburgermenu.png" alt="Menu" style="width:60px;height:60px;">
+      </div>
+      <div id="normalmenu">
+        <ul id="normalmenu_ul">
+          <div class="slidemenu">
+            <li class="normalmenu_li">
+              <p class="normalmenu_text">
+                <b>
+                  SIGHTS   
+                <b>
+              </p>
+            </li>
+            <li class="normalmenu_li">
+              <p class="normalmenu_text">
+                <b>
+                  RESTAURANTS
+                </b>
+              </p>
+            </li>
+            <li class="normalmenu_li">
+              <p class="normalmenu_text">
+                <b>
+                  ACTIVITIES
+                </b>
+              </p>
+            </li>
+            <li class="normalmenu_li">
+              <p class="normalmenu_text">
+                <b>
+                  OTHER
+                </b>
+              </p>
+            </li>
+          </div>  
+        </ul>
+      </div>  
+    </div>
+    <!--end navbar-->
+    <div class="container-fluid">
       <div class="title">
         <h3 id="subtitle">What to do with <span id="hours">48 hours</span> in</h3>
         <h1 id="istanbul">ISTANBUL</h1>
@@ -78,7 +122,7 @@
   <div class="container">
     <div class="row" id="attraction1">
       <h2 class="subtitle" align="center">The Hagia Sophia</h2>
-      <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12" class="img-responsive" width="280px">
+      <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12" class="image-content" width="280px">
         <img src="https://lh3.googleusercontent.com/HXkxf7cfhfxUU4uTwrkaa_GeBBIHdTRrq0pTSl8D5MaObG-glyToApIF-IX3sOvL56qq7HLEiF5-G9Fr-Q_-w9uaaClU2KAYsmrczKpOlhHug6LlkBNZDWE0m-JEqb0HedwFc8Thagp-tO6qRtDuVgoUyR1WIMqfdCRBrk2CgSGCzEfM-inOoNLFb9iYP3uckr215dqurzPvBDbOX0cyWrdNdkEsgu_KN20wzPKuOJ3i-jOD10rIW1labPxqu3bcTS8UNEA9Xo5By3NWp2X6JkixOUp9QU1Q_SvgQZFepvO90Ax3CgV2sAzO6Y_uORd_dPjqeaxJv1bNbABhnHA4mSWa4HyXDVuWnM2g7G3ApSEN-Yi3MiD4RJ0DAJOfkOj6sI0p4gq6UrZyHyFPBMpPeTN1a2zQyQqjv4eFDjwmDpZZbi6F5d8gTvbN_SuJRMq9hCRUWORo1AgAUQi9w5FfJCBkgyXZNLBiBgZIVo60yVVFf6TR0ApbLlfgdl-AXyvrK_1T2XL4-FzAbR-tLnZE0a89CKmbxVkLw3gSBU4FVr8=w438-h657-no">
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" class="content-description">
@@ -99,16 +143,49 @@
         <p>
           The Hagia Sophia has the second largest dome in the world, after the Parthenon in Rome.
         </p>
-        <p>
+        <br>
         <button>Visit Website</button>
-        
       </div>
     </div>
-
+    <div class="row" id="attraction2">
+      <h2 class="subtitle" align="center">The Blue Mosque</h2>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" class="content-description">
+        <h3>What to Expect</h3>
+        <p>
+          Just across from the Hagia Sophia is another magnificent mosque (although we're not quite sure why they call it the "blue" mosque as it is neither really blue from the outside or inside) with finely decorated dome.
+        </p>
+        <p>
+          Unlike the Hagia Sophia, the Blue Mosque is free to the public, and thousands of worshippers visit it on a daily basis. You can't miss the sound of its call to prayer every afternoon.
+        </p>
+        <p>
+          Men and women must enter separately, and there is a completely different entrance for tourists. Ladies, don't forget to bring your head scarves. If you did forget your favorite shawl at home today, no worries - the mosque provides hospital-blue scarves free of charge.
+        </p>
+        <p>
+          As a final tip, you might want to also bring some shoe deoderant as the tourist entrance of the mosque gets pretty smelly, as all visitors must take off their shoes before entering.
+        </p>
+        <br>
+        <button>Visit Website</button>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" class="image-content">
+        <img src="https://lh3.googleusercontent.com/goIt4xAbDE4wHZriQ7l1dajBV61pRSshpePbexcYII-Def4AEEaEgcFGTiFc3W91TvLBFqU3oYgHqS1HnqoAzMWSF3SKlP_BQtWmtY-jPiyCWFqWkxMwUevetGQWxpm12a-cfCTJmtMw89YxSKzwkj2ALZDVStGd66rIN1t2m9iQgLRuNmhad1j1mpLwYRXryzN_W_YkwUuM4NvWMU74kRjYzNn8kK2sNgivrKm6Qv1k2wLGCIRNCKlW3npwKg7Gts-4d0R7DLHteWkzw_4k0Zc_TkR5izJmYMxpyyJ_AUY21VMz1mhGx-Y1t63KYOz8kL8IvSgrBIoIrR-14wirimakGiXvIGdNV5a_sYVosqrM06OCL88lM4EVUfrC84KbWc0SQ6lTVDlA4KhU34jCbJwF5ppyK60AeCQljlJL_le3xARztNAuDQDDdLaMl0dFEeeq9yvBNmlBqKRoOBXvdrIAALa6y6xj7cIdWBGSacez9c91WjreQQG93TJlL-h5XRYzplUJRJr3fMoHJMw8onnuvrb1RU5Mpch2EzpuzHo=w986-h657-no">
+      </div>
+    <div class="row" id="attraction3">
+      <h2 class="subtitle" align="center">Topaki Palace</h2>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" class="image-content">
+        <img src="https://lh3.googleusercontent.com/jD6xeQmCcQWLCbgbMMGLzMZtUR3f6qiZDtqV88yx8oU2ONJWXjNyhhT56mbvh-AkTucafnWTWLLHoY5xc8WOYt30PDDx8-uulRS019dEQHazz1fohtYWtzPkky-BwKX5qDqR-ya1NRpbhG6XUUwEPwozZyYgHzepd4C7ejw2_8FPp7-nh_I1wR3e4AxQBai7kdIXqPwZ-THxvEoalTJUNpHbAwChdGkjyhaYURJxuLtq1buCCwiFKOydvFikkTplvlTNTjeQKMqVjyHSg6EuLOi8LCnwXpkCe2kbErDrWrv3aySf6tS5lnyyBxB5kcbvWGwnoqKb_AoLOO0YP0WQc27wBcNHjjD5Juh04Yf8AA1zvMYHC-zeonPGrEAOKYgSThFe6ZFIi-mKB_RX65SGRgER6o9-FNSiwLFE1HzRSWk_oKuD0bpDBFE3x6YXh13bUUrzqRQdoKWEtXmb20Q7uG4VGRMaxONPiji-sJfXYYXYgGNnBlgwVbNrCs6bHMTyRks0gmOKPDFDVdw865uGTM6WtQX-26guot3owFhRvtQ=w986-h657-no">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" class="content-description">
+        <h3>About Your Visit</h3>
+        <p>
+          Beat the lines and get to the Palace early. Make your way to the end of the Palace. In the fourth and last courtyard, you can enjoy a beautiful view over the river where you can sip on Turkish apple tea and eat baklava from the cafe.If you have extra time, you can visit the <a>Archealogical Museum</a> or hang out in the <a>park</a>.  
+        </p>
+        <p>
+          Some more stuff about the Topaki Palace.
+        <p> 
+      </div>
   </div>
 
     <!--scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
