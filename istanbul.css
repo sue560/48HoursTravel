@@ -1,0 +1,201 @@
+body {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  z-index: 9;
+}
+
+#subtitle {
+   margin-bottom: 0px;
+}
+
+#hours {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+h3 {
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+#istanbul {
+  margin: 0px;
+  font-size: 68px;
+  color: #B31815;
+  font-weight: 800;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel {
+  max-height: 580px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item {
+  background-size: cover;
+}
+
+.carousel-caption {
+  width: 400px;
+  height: 170px;
+  background-color: #B31815;
+  line-height: 1.5;
+  position: absolute;
+  top: 300px;
+  left: 60%;
+  z-index: 5;
+  text-align: left;
+  padding: 20px;
+  opacity: .7;
+}
+
+.container-fluid {
+     padding-right: 0; /*15px in bootstrap.css*/
+     padding-left: 0;  /*idem*/
+     margin-right: auto;
+     margin-left: auto;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+span.glyphicon.glyphicon-chevron-left {
+  position: absolute;
+  margin-left: -50px;
+}
+
+span.glyphicon.glyphicon-chevron-right {
+  position: absolute;
+  margin-right: -50px;
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+ img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  float: center;
+  margin-bottom: 50px;
+ }
+
+.content-description {
+  float: left;
+  clear: both;
+  margin-left: 0px;
+}
+
+button {
+  background-color: white;
+  font-size: 18px;
+  border: solid black 2px;
+  border-radius: 2px;
+}
+
+.col-sm-6 {
+  padding-bottom: 50px;
+}
+/* media queries */
+
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 220px;
+    left: 50%;
+  }
+
+  #istanbul {
+    font-size: 60px;
+  }
+
+  #subtitle {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .content-description {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .title {
+    left: 60px;
+  }
+
+  img {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    float: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption {
+    display: none;
+  }
+
+  .content-description {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  #istanbul {
+    font-size: 48px;
+  }
+
+  #subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  img {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
