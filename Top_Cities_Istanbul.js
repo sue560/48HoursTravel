@@ -9,6 +9,9 @@ $( document ).ready(function() {
 	}, function(){
 		$(".hamburgermenu_li").css("background-color", "white");
 
+  // $('#nav-icon2').click(function() {
+  //   $(this).toggleClass('open');
+  //   });
 	});
 });
 
